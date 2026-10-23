@@ -25,7 +25,7 @@ let colors = ["red", "green", "blue"];
 //         "Color: blue"
 //         Use: console.log("Color: " + colors[i])
 for(let i=0; i<colors.length; i++){
-    alert("Color: " + colors[i]);
+    console.log("Color: " + colors[i]);
 }
 
 // ============================================
@@ -45,7 +45,7 @@ let numbers = [];
 for(let i=0; i<numbers.length; i++){
     let num=prompt("Enter number " + (i + 1));
     num=parseFloat(num);
-    numbers.push(num);
+    numbers[i]="num";
 }
 // STEP 5: Print all the numbers on one line.
 //         Build a string by looping through the array.
