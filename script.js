@@ -42,12 +42,10 @@ let numbers = [];
 //         a) Use prompt() to ask "Enter number " + (i + 1)
 //         b) Use parseFloat() to convert the input to a number
 //         c) Use .push() to add the number to the array
-let sum=0;
 for(let i=0; i<5; i++){
     num=prompt("Enter number " + (i + 1));
     num=parseFloat(num);
     numbers.push(num);
-    sum=sum+num;
 }
 // STEP 5: Print all the numbers on one line.
 //         Build a string by looping through the array.
@@ -64,13 +62,15 @@ for(let i = 0; i < numbers.length; i++){
     if(i<numbers.length - 1){
         numList += ", ";
     }
-    sum += numbers[i];
 }
 console.log("Numbers: " + numList);
 // STEP 6: Calculate the sum of all numbers.
 //         Use a for loop to add each number to a running total.
 //         Print: console.log("Sum: " + sum)
-
+sum = 0;
+for (let i=0; i< numbers.length; i++){
+    sum += numbers[i];
+}
 console.log("Sum: " + sum);
 // STEP 7: Calculate the average.
 //         Average = sum / numbers.length
